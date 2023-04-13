@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-1-Quran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        table, th, td{
+            background-color: darkcyan;
+            border: 5px solid white;
+            border-collapse: collapse;
+           
+        }
+        th, td{
+        
+            width: 300px;
+            height: 100px;
+            background-color: #96D4D4;
+            text-align: center;
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 22px;
+    
+        }
+        body{
+            padding: 50px;
+        }
+        H1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: darkcyan;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        #search-input{
+            width: 500px;
+            height: 50px;
+            display: flex;
+            padding-left: 30px;
+            border-radius: 50px;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        #search-button{
+            margin-left: 5px;
+            width: 100px;
+            border-radius: 30px;
+            
+            background-color: orange;
+
+
+        }
+        
+        /* Add any desired styles here */
+    </style>
+</head>
+<body>
+
+    <h1>Quran</h1>
+    <div class="search">
+        <input type="text" id="search-input" placeholder="Type.....ex: Name, Author, Language...." >
+        <button id="search-button">Search</button>
+
+    </div>
+    <table id="data-table">
+        <thead style="font-size: 40px;">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Language</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
